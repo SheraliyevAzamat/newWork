@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "3065dccc-f491-446c-b478-1924bc2605cb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40585511"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/phones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/phones"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/phones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Xiaomi 13\",\r\n  \"brand\": \"Xiaomi\",\r\n  \"price\": 700,\r\n  \"stock\": 15\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/phones"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/phones/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": 1100,\r\n  \"stock\": 20\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/phones/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/phones/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/phones/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phoneId\": 2,\r\n  \"quantity\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/cart"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/cart"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/checkout"
+			},
+			"response": []
+		}
+	]
+}
